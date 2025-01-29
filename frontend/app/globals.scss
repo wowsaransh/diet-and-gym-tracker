@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.auth {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .inputs {
+      margin: 20px 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        font-size: 30px;
+        border-radius: 10px;
+        margin: 10px 0px;
+        padding: 20px;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    button {
+      margin-bottom: 30px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      background-color: antiquewhite;
+      padding: 10px 20px;
+      font-size: 20px;
+
+
+      &:active {
+        background-color: cadetblue;
+      }
+    }
+
+    p {
+      font-size: 30px;
+
+      a {
+        text-decoration: none;
+        color: antiquewhite;
+
+        &:hover {
+          color: cadetblue;
+        }
+      }
+    }
+
+  }
+}
+
+.alert {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+
+  button {
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3px 0px;
+
+    a {
+      margin: 0px 5px;
+      width: 100%;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #721c24;
+      background-color: #f8d7da;
+      border-radius: 30px;
+    }
+  }
+
+  .searchbar {
+    display: flex;
+    margin-bottom: 20px;
+
+    input {
+      flex: 3;
+      padding: 8px;
+      margin-right: 8px;
+      border-radius: 30px;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    select {
+      flex: 1;
+      padding: 8px;
+      margin-right: 8px;
+      border-radius: 30px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      flex: 1;
+      padding: 8px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 30px;
+
+      &:hover {
+        background-color: #45a049;
+      }
+    }
+  }
+}
+
+.results {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exercise-card {
+  background-color: #f8d7da;
+  color: #721c24;
+  margin: 30px;
+  padding: 20px 40px;
+  width: 300px;
+  display: flex;
+  border-radius: 20px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  .info {
+    flex: 7;
+    margin-right: 10px;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+
+  }
+
+  button {
+    flex: 3;
+    border: none;
+    border-radius: 30px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: #721c24;
+      color: #f8d7da;
+    }
+  }
+}
+
+.recipe-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  background-color: #f8d7da;
+  color: #721c24;
+  margin: 30px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  img {
+    margin: 5px 0px;
+    width: 200px;
+    border-radius: 40px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    flex: 7;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+  }
+
+  button {
+    flex: 3;
+    border: none;
+    border-radius: 30px;
+    height: 100px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover {
+      background-color: #721c24;
+      color: #f8d7da;
+    }
+  }
+}
+
+.main {
+  margin-top: 200px;
+}
